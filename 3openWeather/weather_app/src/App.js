@@ -11,7 +11,7 @@ function App() {
        <Forecast />
      </main>
      <footer>
-       Page created by Donny
+       Page created by Donny Vallejo
      </footer>
    </div>
  );
