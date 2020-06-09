@@ -3,7 +3,7 @@ block content
   .container
       h2 
         p
-         | Weather App in NodeJS using Open Weather API
+         | Moody Weather
       br
       br
       .row
@@ -12,6 +12,9 @@ block content
             .form-group
               label.sr-only(for="inputEmail") City Name
               input.form-control( name="city" type="text" placeholder="Enter City Name" required='required')
+             
+              label.sr-only(for="inputEmail") 
+              input.form-control( name="mood" type="text" placeholder="What is your mood" required='required')
               
             |    
             button.btn.btn-primary(type="submit") Fetch Weather

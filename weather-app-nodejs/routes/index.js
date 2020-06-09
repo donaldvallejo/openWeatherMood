@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/weather', function(req, res, next){
-  let mood = req.body.mood;
+  let mood = req.body.mood
   let city = req.body.city;
   url = url+city+"&"+appId;
 
@@ -26,7 +26,7 @@ router.post('/weather', function(req, res, next){
       }
 
     let country = (body.sys.country) ? body.sys.country : '' ;
-    let forecast = "For city "+city+', country '+country+' And this news makes you feel ';
+    let forecast = "For city "+city+', country '+country+' And this news makes you feel '+mood+'!';
 
     res.render('index', {body : body, forecast: forecast});
    });
